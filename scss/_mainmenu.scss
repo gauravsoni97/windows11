@@ -1,0 +1,24 @@
+@mixin dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mainmenu{
+    .taskbariconsarea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       a{
+           img{
+               width: 50%;
+               margin-right: -200px;
+           }
+
+         
+       }
+
+    }
+}

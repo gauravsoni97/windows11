@@ -1,0 +1,25 @@
+.taskbarright{
+    @include dflex;
+    justify-content: flex-end;
+    .taskbarrightarea{
+        .taskbarrighticons{
+            @include dflex;
+            li{
+                margin-right:1rem;
+                margin-bottom: -15px;
+                font-size: .8rem;
+                text-align: center;
+                cursor: pointer;
+                font-weight: 600;
+                &:nth-child(4){
+                    font-size: .6rem;
+                    font-weight: 700;
+                }
+                &:nth-child(2){
+                    transform: rotate(-45deg);
+                }
+            }
+
+        }
+    }
+}

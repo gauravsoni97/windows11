@@ -1,0 +1,170 @@
+@mixin dflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startmenu {
+  width: 100%;
+  .startmenubox {
+    padding: 2.5rem 3.5rem 0px 3.5rem;
+    width: 38vw;
+    border-radius: 8px;
+    background-color: #f3f3f3f6;
+    position: fixed;
+
+    //  important for click transition
+    bottom: -655px;
+    //  important for click transition
+
+    left: 50%;
+    transform: translateX(-53%);
+    transition: .8s all ease-in-out;
+
+    .menuhead {
+      display: flex;
+      align-items: center;
+      .lhead {
+        h3 {
+          font-size: 1rem;
+          font-weight: 600;
+          padding: 0 0;
+        }
+      }
+
+      .rhead {
+        background-color: white;
+        @include dflex;
+        padding: 0.3rem;
+        margin: 0 1.2rem;
+        border-radius: 4px;
+        h6 {
+          font-size: 0.8rem;
+          font-weight: 500;
+          padding: 0;
+          margin: 0;
+          margin-right: 10px;
+        }
+        i {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+.startmenupins {
+  padding-top: 1.5rem;
+  img {
+    width: 65%;
+  }
+
+  .pin-items {
+    h6 {
+      padding: 0.5rem 0;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.recommendedarea {
+  .recommended {
+    margin-top: 2rem;
+
+  }
+}
+.recom-list {
+  .recommend-details {
+    display: flex;
+    align-items: flex-start;
+    margin-top: .5rem;
+    img {
+        width: 30px;
+        margin: 1rem 0;
+        margin-right: 0.6rem;
+    }
+    
+    .recom-area {
+      display: flex;
+      align-items: center;
+      h4 {
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0.2rem 0;
+        padding: 0;
+      }
+      p {
+        color: grey;
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+.col-8{
+    padding: 0;
+}
+
+
+
+
+.startmenuuser{
+  border-top: 1px solid rgb(223, 223, 223);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  .userarea{
+    display: flex;
+    align-items: center;
+
+    h6{
+      font-size: .8rem;
+    }
+  }
+  img{
+    width: 40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+
+  .userpower{
+    display:  flex;
+    justify-content: flex-end;
+    color: grey;
+  }
+}
+
+
+
+.musicimg{
+  position: absolute;
+  bottom: -1000px;
+  width: 100vw;
+  height: 95vh;
+  transition: .8s all ease-in;
+}
+
+
+
+.files{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+  height: 55vh;
+  background-color: white;
+  bottom: -1000px;
+  padding: .5rem;
+  border-radius: 8px;
+  transition: .8s all ease-in;
+
+
+}
